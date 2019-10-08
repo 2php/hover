@@ -38,7 +38,7 @@ func InitWindowsMsi() {
 	printInitFinished(packagingFormat)
 }
 
-func BuildWindowsMsi() {
+func BuildWindowsMsi(buildName string) {
 	projectName := pubspec.GetPubSpec().Name
 	packagingFormat := "windows-msi"
 	tmpPath := getTemporaryBuildDirectory(projectName, packagingFormat)
